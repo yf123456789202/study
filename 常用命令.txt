@@ -1,0 +1,65 @@
+kubeadm reset
+kubeadm init  --pod-network-cidr=10.244.0.0/16 --image-repository registry.aliyuncs.com/google_containers --service-cidr=10.92.0.0/12
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+yf01331036@alibaba-inc.com
+
+ssh-keygen 
+cat ~/.ssh/id_rsa.pub
+vi ~/.ssh/authorized_keys
+
+kubectl patch cvr -nvcns `kubectl get cvr -nvcns | awk '{print $1}'`   --type='json'  -p='[{"op":"replace","path":"/metadata/finalizers","values":"null"}]'
+
+kubectl describe node magic02-k8s-s1 | grep Taints
+kubectl taint node magic02-k8s-s1 node-role.kubernetes.io/master:NoSchedule-
+
+helm show values iomesh/iomesh> iomesh-values.yaml 
+helm upgrade --namespace iomesh-system iomesh iomesh/iomesh --values iomesh.yaml 
+
+du -sh *
+
+ip route add default via 11.160.51.183 dev bond0 
+route add default gw 11.160.45.103
+
+chaosd search --all
+
+libcstor是pool engine的管控面以及从nof接受数据下发给uzfs
+cstor就是uzfs
+
+docker system prune -a
+
+kubectl cordon magic02-k8s-s2   #让节点不被调度
+
+echo 1 > /proc/sys/vm/drop_caches 清理缓存
+
+ssh-copy-id  
+
+kubectl config set-context --current --namespace=vcns
+
+docker save 63f820dbf06e | gzip > pool.tar.gz
+docker load -i pool.tar.gz
+docker tag 63f820dbf06e reg.docker.alibaba-inc.com/aliyun-ais-server-vcns/cstor-pool:v1.0.0
+ 
+# master 节点
+cat >>~/.bashrc<<EOF
+export KUBECONFIG=/etc/kubernetes/admin.conf
+EOF
+source ~/.bashrc
+
+# 从节点
+cat >>~/.bashrc<<EOF
+export KUBECONFIG=/etc/kubernetes/kubelet.conf
+EOF
+source ~/.bashrc
+
+dataerrors=1,validate=read
+
+~/.bashrc  #login-shell和non-login shell都需要的环境配置
+
+helm list -A
+helm uninstall vcns -nvcns
+helm install vcns ./vcns -nvcns
+
+ansible-playbook vcns_demo_test.yaml --extra-vars "host=100.69.246.80 argument=-c test_case=vcns_001_somke_test"
+
+set encoding=utf-8

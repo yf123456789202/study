@@ -1,0 +1,64 @@
+1、k8s：
+	部署：
+	1）https://cloud.tencent.com/developer/article/1674040
+    学习:
+	1)https://jimmysong.io/kubernetes-handbook/concepts/storage.html
+	安装calico：
+	https://www.jianshu.com/p/2c436a0ffe7f
+	
+2、ansible入门学习：
+	1）https://blog.csdn.net/xinshuzhan/article/details/115915698
+	2）https://www.cnblogs.com/keerya/p/7987886.html
+
+3、ansible-playbook：
+	1）https://www.cnblogs.com/hukey/p/13157772.html
+
+4、ansible之docker_image模块：
+	1）https://cloud.tencent.com/developer/article/2142175
+
+5、ansible之wait_for模块：
+	1）https://blog.csdn.net/qq_36543595/article/details/124109357
+
+6、ansible之docker_container模块：
+	1）https://www.manssh.com/archives/ansible%E4%B9%8Bdockercontainer%E6%A8%A1%E5%9D%97
+	2）https://blog.csdn.net/weixin_34212189/article/details/94318876
+
+7、ansible之在docker中运行命令：
+	1）https://nibes.cn/blog/10225
+
+8、ansible UI之AWX学习使用：
+    安装：
+	1）https://www.toutiao.com/article/6894128030201938436/?wid=1669618697801
+	2）https://blog.csdn.net/qq_41417660/article/details/108707827
+	3）https://blog.csdn.net/sgj584520/article/details/121975476
+	使用：
+	1）https://docs.ansible.com/automation-controller/4.2.0/html_zh/quickstart/examine_dashboard.html
+	2）https://www.jianshu.com/p/228720f16e6d
+	3）https://developer.aliyun.com/article/1117198#:~:text=%E5%9C%A8%20AWX%20%E4%B8%AD%EF%BC%8C%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E4%BD%BF%E7%94%A8%E4%BD%9C%E4%B8%9A%E6%A8%A1%E6%9D%BF%E6%9D%A5%E7%9B%B4%E6%8E%A5%E8%AE%BE%E7%BD%AE%E9%A2%9D%E5%A4%96%E7%9A%84%E5%8F%98%E9%87%8F%EF%BC%9A%20%E9%80%9A%E8%BF%87%E4%BD%9C%E4%B8%9A%E6%A8%A1%E6%9D%BF%E4%B8%AD%E7%9A%84,EXTRA%20VARIABLES%20%E5%8F%98%E9%87%8F%20%E5%AD%97%E6%AE%B5%E3%80%82
+	
+9、spdk：
+	1）https://spdk.io/doc/bdev_pg.html
+	2）https://blog.csdn.net/zlarm/article/details/79151138
+	
+10、zfs：
+	1）https://blog.csdn.net/yangp01/article/details/5056210
+
+11、Understand：
+	1）https://blog.csdn.net/weixin_44136165/article/details/115266489
+	2）http://codemx.cn/2016/04/30/Understand01/
+
+12、时序图：
+	1）http://www.uml.org.cn/oobject/201909202.asp
+
+13、fio:
+	1）https://www.cnblogs.com/luxiaodai/p/9875016.html#_label1_2
+	2）https://forum.huawei.com/enterprise/zh/thread/580935250886934528
+	
+14、vdbench：
+	1）https://blog.csdn.net/u012114090/article/details/81626430
+	2）https://www.codetd.com/en/article/13422706#2%E3%80%81%E5%9D%97%E8%AE%BE%E5%A4%87%EF%BC%88%E8%A3%B8%E7%9B%98%E6%B5%8B%E8%AF%95%EF%BC%89
+	
+15、ssh执行命令失败：
+	1）https://blog.csdn.net/nklinsirui/article/details/104673286
+	
+	
