@@ -63,3 +63,10 @@ helm install vcns ./vcns -nvcns
 ansible-playbook vcns_demo_test.yaml --extra-vars "host=100.69.246.80 argument=-c test_case=vcns_001_somke_test"
 
 set encoding=utf-8
+
+set encoding=utf-8
+
+tar -zcvf t.tar.gz t
+
+yum list installed | grep docker 
+yum -y remove docker****
